@@ -1,0 +1,34 @@
+name: iic
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+  - defaults
+
+dependencies:
+  # Python version
+  - python=3.10
+
+  # PyTorch + CUDA 11.8 (GPU)
+  - pytorch
+  - torchvision
+  - torchaudio
+  - pytorch-cuda=11.8
+
+  # Manipulation de données
+  - numpy
+  - pandas
+  - matplotlib
+  - scikit-learn
+
+  # Jupyter Notebook
+  - jupyter
+  - notebook
+  - ipykernel
+
+  # Traitement d'images
+  - pillow
+  - pip
+  - pip:
+      - opencv-python       # OpenCV pour Python
+      - tqdm                # Barres de progression

@@ -1,0 +1,19 @@
+# Installer conda
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+bash Miniconda3-latest-Linux-x86_64.sh
+
+#Créer l'environment
+conda env create -f environment.yml
+
+#Déplacer un dataset
+#A lancer dans un powershell sur la machine ne local, pas la machine en ssh
+scp -r "C:\Users\User\4TC\S1 - Tohoku\Labo\RAVIR Dataset" hnoel@thunder:/home/usrs/hnoel/
+
+#Si on ne trouve pas pour mettre le kernel sur un notebook
+python -m ipykernel install --user --name iic --display-name "iic"
+python -m ipykernel install --user --name iic --display-name "Python (iic)"
+
+
+#Pour activer et desactiver
+conda activate iic
+conda deactivate iic
