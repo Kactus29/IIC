@@ -17,3 +17,7 @@ python -m ipykernel install --user --name iic --display-name "Python (iic)"
 #Pour activer et desactiver
 conda activate iic
 conda deactivate iic
+
+#Se connecter de chez moi 
+ssh -i ~/.ssh/id_rsa hnoel@gw.iic.ecei.tohoku.ac.jp
+ssh ...
