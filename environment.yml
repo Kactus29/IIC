@@ -32,3 +32,4 @@ dependencies:
   - pip:
       - opencv-python       # OpenCV pour Python
       - tqdm                # Barres de progression
+      - monai               # 🧠 Medical Open Network for AI (segmentation, losses, etc.)
